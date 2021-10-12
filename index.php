@@ -10,8 +10,11 @@
     LV bag piena di lean e cash (Ice, ice, ice)  <br>
     Diecimila sui denti, se parlo, ti acceco (Crack) <br>
     Non c\'è bisogno di mettere il flash (Brr, pow, flash, finesse) <br>
-    VVS veri, mi guardi e diventi cieco (Brr, pow, Big 4L, THB)'
+    VVS veri, mi guardi e diventi cieco (Brr, pow, Big 4L, THB)';
 
+    $lunghezzaParagrafo = strlen($paragrafo);
+    $censura = '***';
+    $paragrafoCensurato = str_replace($_GET['parola'], $censura, $paragrafo);
 ?>
 
 
@@ -26,8 +29,10 @@
 <body>
 
     <p><?php echo $paragrafo?></p>
+    <p>Lunghezza del paragrafo: <?php echo $lunghezzaParagrafo?></p>
+    <br>
     
-
-    <?php echo ($_GET['parola']) ?>
+    <h2>paragrafo censurato: </h2>
+    <p><?php echo $paragrafoCensurato ?></p>
 </body>
 </html>
