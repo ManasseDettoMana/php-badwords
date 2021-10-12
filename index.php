@@ -3,7 +3,7 @@
     Fuori gli attori <br>
     Vi conviene toccarvi i coglioni <br>
     Vi conviene stare zitti e buoni <br>
-    Qui la gente è strana tipo spacciatori)';
+    Qui la gente è strana tipo spacciatori';
 
     $lunghezzaParagrafo = strlen($paragrafo);
     $censura = '***';
